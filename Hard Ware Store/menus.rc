@@ -1,0 +1,138 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "Inventory"
+    BEGIN
+        MENUITEM "View Inventory",              ID_INVENTORY_VIEWINVENTORY
+        MENUITEM "Check Out",                   ID_INVENTORY_CHECKOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_INVENTORY_EXIT
+    END
+    POPUP "Customer"
+    BEGIN
+        MENUITEM "Add to Cart",                 ID_CUSTOMER_ADDTOCART
+        MENUITEM "Remove from Cart",            ID_CUSTOMER_REMOVEFROMCART
+        MENUITEM "Display Cart",                ID_CUSTOMER_DISPLAYCART
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 218, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,48,116,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,115,50,14
+    EDITTEXT        IDC_EDIT1,101,39,70,12,ES_AUTOHSCROLL
+    LTEXT           "Stock Number:",IDC_STATIC,41,39,47,8
+    EDITTEXT        IDC_EDIT2,101,57,21,12,ES_AUTOHSCROLL
+    LTEXT           "Quantity:",IDC_STATIC,57,57,31,9
+    LTEXT           "Description:",IDC_STATIC,50,76,38,10
+    EDITTEXT        IDC_EDIT3,101,73,94,12,ES_AUTOHSCROLL
+    LTEXT           "Price Per Each:",IDC_STATIC,38,95,50,10
+    EDITTEXT        IDC_EDIT4,101,92,65,12,ES_AUTOHSCROLL
+    LTEXT           "Please provide the following information",IDC_STATIC,50,20,134,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
